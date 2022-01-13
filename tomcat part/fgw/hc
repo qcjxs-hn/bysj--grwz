@@ -1,0 +1,239 @@
+         String[] xgplunamecbsz=xgplunamecb.split(";");
+         String[] xgplusercbsz=xgplusercb.split(";");
+         String[] xgplplcbsz=xgplplcb.split(";");
+         String[] xgpldatecbsz=xgpldatecb.split(";");
+         for(int xgplicb= 0;xgplicb<xgplunamecbsz.length&&xgplicb<7;xgplicb++){
+           %>
+         <div>
+            <p class="plusercbp"><img class="plusercbtp" src="https://www.qc-h.xyz/usertx/<%out.print(xgplusercbsz[xgplicb]);%>.ico">
+           <div class="plusercbdiv1">
+               <a class="plusercba1"><% out.print(xgplunamecbsz[xgplicb]);%></a>
+           </div>
+           <br/>
+            <div class="plusercbdiv3">
+               <a class="plusercba3"><% out.print(xgpldatecbsz[xgplicb]);%></a>
+           </div>
+           <br/>
+           <div class="plusercbdiv2">
+               <a class="plusercba2"><%if(xgplplcbsz[xgplicb].length()>15){out.print(xgplplcbsz[xgplicb].substring(0,15)+"...>");}else{out.print(xgplplcbsz[xgplicb]);}%></a>
+           </div>
+         </p>
+         </div>
+          <% }%>
+                    <%for(int scpicturenumber=0;scpicturenumber<10;scpicturenumber++){%>
+          <!--<form method="post" action="https://www.qc-h.xyz/fgw/UploadServlet.jsp" enctype="multipart/form-data">
+          <input hidden="hidden" class="wztph<%out.print(scpicturenumber);%>" type="file" name="uploadFile"/>
+          <input type="submit" value="上传" />-->
+          </form>
+          <%}%>
+
+
+
+
+
+          <%
+
+String newtx="";
+String xsname="";
+String newcgur="";
+String success="";
+String cgur="";
+session.setAttribute("ymlxdm","3");
+int dljs=0;
+String dljl="1";
+String newuser="";
+//解密
+String newzyurl= "";
+if(cgur!=null){
+  int cgurjs=1;
+          // out.print(zyurlsz[zyi]);
+    while(cgurjs<cgur.length()){
+           newzyurl+=cgur.charAt(cgurjs);
+           cgurjs+=22;
+      }
+}
+else{
+  xsname=session.getAttribute("xsname").toString();
+  success=session.getAttribute("success").toString();
+  newcgur=session.getAttribute("newcgur").toString();
+}
+/*out.print(xsname);
+out.print(newcgur);
+out.print(success);*/
+//第二次获取
+if(newzyurl!=""){
+ newcgur=newzyurl.substring(4,8);
+success=newzyurl.substring(12,13);
+}
+//获取登录信息
+    	Cookie[] cookies = request.getCookies();
+    	//保存有cookie对象
+    	if(cookies != null && cookies.length > 0){
+    		for(Cookie c: cookies){
+    			if(c.getName().equals("dljl")){
+    				dljl = c.getValue();
+    			}
+           if(c.getName().equals("newcgur")){
+    				newuser = c.getValue();
+    			}
+    		}
+    	}
+      
+      //out.print(newuser);
+
+/*更新文章内容*/
+    String zzname="";
+    String zzdate="";
+    String zzyds="";
+    String zzwz="";
+    zzname=request.getParameter("cdzz")+"";
+    if(zzname.equals("")){
+          zzname=session.getAttribute("zzname").toString();
+          zzdate=session.getAttribute("zzdate").toString();
+          /*out.print("0");
+          out.print(zzname);
+          out.print(zzdate);*/
+    }
+    else{
+          zzname=request.getParameter("cdzz")+"";
+          zzdate=request.getParameter("cdsj")+"";
+          zzyds=request.getParameter("cdyds")+"";
+          //out.print("1");
+    }
+    String xgplurl="jdbc:mysql://localhost:3306/wzk?user=root&password=123456&useUnicode=true&characterEncoding=UTF-8";
+    response.setContentType("text/html;charset=UTF-8");
+    request.setCharacterEncoding("UTF-8");
+    Class.forName("com.mysql.jdbc.Driver");
+    Connection wzhqlj =DriverManager.getConnection(xgplurl);
+    String wzhqcx="select wz from wzktable where username=? && date=?";
+    PreparedStatement wzhqp = wzhqlj.prepareStatement(wzhqcx);
+    /*out.print(zzname);
+    out.print(zzdate);*/
+    wzhqp.setString(1,zzname);
+    wzhqp.setString(2,zzdate);
+    //wzhqlr=wzhqp.executeQuery(wzhqp);
+   // out.print(wzhqp);
+    ResultSet wzhqlr=wzhqp.executeQuery();
+    while(wzhqlr.next()){
+      zzwz+=wzhqlr.getString("wz");
+      //out.print(zzwz);
+      }
+    /*更新评论*/
+    String xgpluname="";
+    String xgpluser="";
+    String xgplpl="";
+    String xgpldate="";
+    String xgsz="";
+    String xgplur="jdbc:mysql://localhost:3306/xgpl?user=root&password=123456&useUnicode=true&characterEncoding=UTF-8";
+    response.setContentType("text/html;charset=UTF-8");
+    request.setCharacterEncoding("UTF-8");
+    Class.forName("com.mysql.jdbc.Driver");
+    Connection xgpllj =DriverManager.getConnection(xgplur);
+    String xgplcx="select * from xgpltable where jrfs='1' order by date desc";
+    PreparedStatement xgplpp = xgpllj.prepareStatement(xgplcx);
+    ResultSet xgplr=xgplpp.executeQuery();
+    while(xgplr.next()){
+      xgpluname+=xgplr.getString("uname")+";";
+      xgpluser+=xgplr.getString("user")+";";
+      xgplpl+=xgplr.getString("pl")+";";
+      xgpldate+=xgplr.getString("date")+";";
+      }
+      /*更新侧边评论*/
+    String xgplunamecb="";
+    String xgplusercb="";
+    String xgplplcb="";
+    String xgpldatecb="";
+    String xgszcb="";
+    String xgplcxcb="select * from xgpltable order by date desc";
+    PreparedStatement xgplppcb = xgpllj.prepareStatement(xgplcxcb);
+    ResultSet xgplrcb=xgplppcb.executeQuery();
+    while(xgplrcb.next()){
+      xgplunamecb+=xgplrcb.getString("uname")+";";
+      xgplusercb+=xgplrcb.getString("user")+";";
+      xgplplcb+=xgplrcb.getString("pl")+";";
+      xgpldatecb+=xgplrcb.getString("date")+";";
+      }
+          /*登录名字显示*/       
+    if(xsname.equals("")){
+    
+    String xsurl="jdbc:mysql://localhost:3306/user?user=root&password=123456";
+    Connection ljrxs =DriverManager.getConnection(xsurl);
+    String xsrs="select * from usertable where user=?";
+    PreparedStatement prxs = ljrxs.prepareStatement(xsrs);
+    prxs.setString(1,newcgur);
+    ResultSet rxs=prxs.executeQuery();
+    while(rxs.next()){
+          xsname=rxs.getString("nickname");
+          success=rxs.getString("success");
+    } 
+    session.setAttribute("xsname",xsname);
+    session.setAttribute("success",success);
+    }
+    //获取登录信息
+    if(success.equals("1")){
+      Cookie newcgurcookie=new Cookie("newcgur",newcgur);
+      Cookie dljlcookie=new Cookie("dljl","1");
+      response.addCookie(newcgurcookie);
+      response.addCookie(dljlcookie);
+    }
+        //头像
+    if(newcgur!=""&&success.equals("1")){
+      newtx=newcgur+".ico";
+    }
+    else{
+      newtx="pcdltp.ico";
+    }
+%>
+
+
+
+    if(wz.charAt(i)=='h'){
+               if(wz.charAt(i+1)=='t'){
+                       if(wz.charAt(i+1)=='t'){
+                            if(wz.charAt(i+1)=='p'){
+                                if(wz.charAt(i+1)=='s'){
+                                 if(wz.charAt(i+1)==':'){
+                                                    if(wz.charAt(i+1)=='/'){
+                                                                       if(wz.charAt(i+1)=='/'){
+                                                  }
+                                                  else{
+                                                                  newwz+=wf;
+                                                                  fhJs=0;
+                                                  }
+                                          }
+                                       else{
+                                        newwz+=wf;
+                                        fhJs=0;
+                                        }
+                                    }
+                                  else{
+                                    newwz+=wf;
+                                    fhJs=0;
+                                    }
+                                 }
+                                 else{
+                                    newwz+=wf;
+                                    fhJs=0;
+                                     }
+                        }
+                       else{
+                         newwz+=wf;
+                         fhJs=0;
+                            }
+                    }
+                    else{
+                        newwz+=wf;
+                        fhJs=0;
+                        }     
+            }
+            else{
+            newwz+=wf;
+            fhJs=0;
+            }
+            char[] pdSz={'<','i','m','g','s','/','h','t','p',':'};
+             if(pdSz.indexOf(wz.charAt(i))!=-1){
+                 pPz+=1;
+             }
+             else{
+                 pPz=0;
+             }
