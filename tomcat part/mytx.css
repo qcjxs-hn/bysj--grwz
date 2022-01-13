@@ -1,0 +1,227 @@
+@charset "utf-8";
+/* CSS Document */
+
+/**/
+*{
+	/*初始化 清除元素原有的内外边距*/
+	padding: 0;
+	margin: 0;
+}
+/*主体样式*/
+.mytxzt{
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 950px;
+    background-color: deepskyblue;
+}
+.sctxys{
+    /*头部样式*/
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    margin: 4% 0 0 10px;
+    padding: 3% 0 0 0;
+}
+.pxgtx{
+    width: 100%;
+    height: 200px;
+    position: relative;
+    margin: 10px 0 0 0;
+}
+.tbys{
+    /*图标*/
+    width: 100px;
+    height: 100px;
+    margin: -50px 0 0 20px; 
+	border: 1px solid #FFF;
+	border-radius: 50%;
+	box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.3);
+	transition: all .5s;
+}
+.wjscys{
+    /*文件上传*/
+    opacity: 0;
+    position: relative;
+    width: 90px;
+    height: 90px;
+    margin: -110px 0 0 37%;
+
+}
+/*h5标签*/
+.h5xgtxys{
+    width: 100px;
+    height: 50px;
+    margin: 0 0 0 5%;
+    position: relative;
+}
+.h5xgncys{
+    width: 100px;
+    height: 50px;
+    margin: -100px 0 0 5%;
+}
+.divnc{
+    width: 100%;
+    height: 50px;
+    margin:  0 0 20px 0;
+    position: relative;
+}
+/*昵称*/
+.xgncys{
+    position: relative;
+    width: 150px;
+    height: 25px;
+    margin: -60px 0 0 30%;
+}
+
+    /*电子邮件*/
+.divemail{
+
+    width: 100%;
+    height: 50px;
+    margin: 0 0 20px 0;
+}
+.h5xgemail{
+    position: relative;
+    width: 150px;
+    height: 25px;
+    margin:  100px 0 0 -5%;
+}
+.xgemailys{
+    position: relative;
+    width: 150px;
+    height: 25px;
+    margin: -40px 0 0 30%;
+}
+/*新密码*/
+.divnewpassword{
+    width: 100%;
+    height: 50px;
+    margin: 0 0 20px 0;
+}
+.h5xgmm{
+    position: relative;
+    width: 150px;
+    height: 25px;
+    margin:  100px 0 0 -2%;
+}
+.xgmmys{
+    position: relative;
+    width: 150px;
+    height: 25px;
+    margin:  -40px 0 0 30%;
+}
+/*提交样式*/
+.tjys{
+
+    text-decoration: none;
+    text-shadow: none;
+    position: relative;
+    width: 100px;
+    margin: 18% 0 0 50%;
+}
+.tjanys{
+    width: 190px;
+    background: #ea08ff73;
+    color: #fff;
+    margin: 50px 0 0 -75%;
+}
+@media (min-width: 1500px) {
+    .tjys{
+        margin: 9% 0 0 49%;
+    }
+}
+/*.scdiv{
+    z-index: 0;
+    width: 100%;
+    height: 50px;
+    margin: -20% 0 0 0;
+    position: relative;
+    
+}
+.color01{
+    width: 100px;
+    height: 50px;
+    margin: 0 0 0 100px;
+    background-color: rgb(0, 57, 245);
+}
+.color02{
+    width: 100px;
+    height: 50px;
+    margin: -50px 0 0 300px;
+    background-color:chartreuse;
+}
+.color03{
+    width: 100px;
+    height: 50px;
+    margin: -50px 0 0 500px;
+    background-color: rgb(247, 44, 220);
+}
+.color04{
+    width: 100px;
+    height: 50px;
+    margin: -50px  0 0 700px;
+    background-color: rgb(150, 7, 15);
+}
+.color05{
+    width: 100px;
+    height: 50px;
+    margin: -50px 0 0 900px;
+    background-color: rgb(252, 4, 157);
+}
+.scdiv2{
+    z-index: 0;
+    width: 100%;
+    height: 50px;
+    margin: -50px 0 0 0 ;
+    position: relative;
+    
+}
+.color012{
+    width: 100px;
+    height: 50px;
+    margin: 0 0 0 0px;
+    background-color: rgba(221, 245, 0, 0.288);
+}
+.color022{
+    width: 100px;
+    height: 50px;
+    margin: -50px 0 0 200px;
+    background-color:rgba(0, 238, 255, 0.274);
+}
+.color032{
+    width: 100px;
+    height: 50px;
+    margin: -50px 0 0 400px;
+    background-color: rgba(253, 42, 225, 0.322);
+}
+.color042{
+    width: 100px;
+    height: 50px;
+    margin: -50px  0 0 600px;
+    background-color: rgba(248, 124, 130, 0.459);
+}
+.color052{
+    width: 100px;
+    height: 50px;
+    margin: -50px 0 0 800px;
+    background-color: rgb(4, 111, 252);
+}
+.color01,.color02,.color03,.color04,.color05{
+    animation: move 2s linear infinite;
+}
+.color012,.color022,.color032,.color042,.color052{
+    animation: move2 2s linear infinite;
+}
+@keyframes move {
+    100%{
+        transform: translateX(1200px);
+    }
+    
+}
+@keyframes move2 {
+    100%{
+        transform: translateX(-1200px);
+    }
+    
+}*/
