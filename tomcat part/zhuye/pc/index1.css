@@ -1,0 +1,711 @@
+@charset "utf-8";
+/* CSS Document */
+
+/**/
+*{
+	/*初始化 清除元素原有的内外边距*/
+	padding: 0;
+	margin: 0;
+
+}
+body {
+	z-index: 0;
+	/* 溢出隐藏 为了视频效果 可以不加 */
+	overflow: hidden;
+	/* 让页面占浏览器可视区域的高度 */
+	background-color: #e6f1f98c;
+	height: 100vh;
+}
+/*所有主体*/
+.syzt{
+	width: 100%;
+	z-index: -1;
+	height: 100%;
+	/*background-color:#f5f5f579;*/
+	color: 848484;
+	overflow: auto;
+	transition: all 0.25s ease-in;
+}
+/*图片所占空间*/
+.bg{
+	z-index: 0;
+	width:100%;
+	height: 30%;
+	margin: -70% 0px 0px 0px;
+	position: relative;
+}
+.headbg{
+	z-index: 0;
+	width:100%;
+	height: 100%;
+	margin: 0% 0px 0px 0px;
+}
+.headbg2{
+	background-image: url("https://www.qc-h.xyz/zhuye/gjtp/headbg.jpg" );
+	background-attachment:scroll;
+	background-size: 100% 100%;
+	z-index: 1;
+	width:100%;
+	height:70%;
+	margin: 0px 0px 0px 0px;
+	position: relative;
+}
+/*图片大小*/
+@media (max-width:960px) {
+	@media (max-height:1080px) {
+		.headbg2{
+			height: 300px;
+		}
+		.tuxia{
+			display: none;
+		}
+
+	}
+}
+/*头部文字属性*/
+.bgwz{
+	z-index: 2;
+	width:100%;
+	margin: -25% 0 0 0;
+	position: relative;
+	text-align:center;
+	}
+.bgwz span{
+	z-index: 1;
+}
+.bgwz a{
+	text-decoration: none;
+}
+/*导航栏*/
+.ylk {
+	    z-index: 2;
+		width: 100%;
+		height: 100px;
+		background-color: #e6f1f9;
+		/* 盒子阴影 */
+		/*box-shadow: 0 10px 50px #c6d9ed;*/
+			/* 相对定位 */
+		position:sticky;
+}
+
+.ylk input{
+		/* 隐藏复选框 */
+		display: none;
+}
+.ylk label {
+	/* 绝对定位 */
+	position: absolute;
+	/* clac方法自动计算 让元素垂直居中 */
+	top: calc(50% - 25px);
+	right: 50px;
+	width: 50px;
+	height: 50px;
+	/* 圆角属性 */
+	border-radius: 6px;
+	/* 元素边框 */
+	border: 1px solid rgba(198, 217, 237, 0.3);
+	background-color: #e6f1f9;
+	/* 盒子阴影 多组值用逗号隔开 */
+	box-shadow: 5px 3px 6px 1px #c6d9ed, -5px -3px 6px 1px #fff;
+	/* 鼠标移入变小手 */
+	cursor: pointer;
+	transition: all 0.5s ease-out;
+}
+.ylk label::before,
+.ylk label::after {
+	content: "";
+	/* 利用两个伪元素来定义 */
+	position: absolute;
+	left: 5px;
+	width: 40px;
+	height: 4px;
+	/* 让两条更佳圆滑 */
+	border-radius: 4px;
+	background-color: #042a41;
+	/* 收回来的动画刚好相反 */
+	transition: transform 0.3s ease-out, top 0.3s ease-out 0.3s;
+}
+/* 分别定义两条线的位置 */
+.ylk label::before {
+	top: calc(50% - 10px);
+}
+.ylk label::after {
+	top: calc(50% + 6px);
+}
+/* 然后定义label元素的动画效果 */
+/* 对了:checked是判断复选框是否被选中 + 是相邻兄弟选择器 找最近的下一次label元素 */
+.ylk input:checked + label {
+	/* 加了inset就是内部阴影 啥都不写就是默认的外部阴影(outset) */
+	box-shadow: 0 0 0 #fff, 0 0 0 #fff, 5px 3px 6px 1px #c6d9ed inset,
+		-5px -3px 6px 1px #fff inset;
+}
+.ylk input:checked + label::before {
+	top: calc(50% - 2px);
+	/* 逆时针旋转45度 */
+	transform: rotate(-45deg);
+	transition: top 0.3s ease-out, transform 0.3s ease-out 0.3s;
+}
+.ylk input:checked + label::after {
+	top: calc(50% - 2px);
+	/* 顺时针旋转45度 */
+	transform: rotate(45deg);
+	/* 定义过渡效果 */
+	/* 先执行top的变化 然后在.3s后执行transform转换 ease-out是从快速到慢速的过程 */
+	transition: top 0.3s ease-out, transform 0.3s ease-out 0.3s;
+}
+.ylk ul{
+	margin: 1000dp,0dp,0dp,0dp;
+	margin: -2% 0% 0% 75%;
+	width: 20%;
+	position: relative;
+	top: 100px;
+	/* 元素的不透明度 为0 就是完全透明 */
+	opacity: 0;
+	/*background-color: rgba(255, 0, 255, 0.205);
+	*/
+	/* 让元素缩放到0 就是直接隐藏 */
+	transform: scaleY(0);
+	/* 这个属性设置元素缩放的中心点 设置到了最上面的中间位置 */
+	transform-origin: 50% 0;
+	transition: all 0.5s ease-out;
+}
+.ylk ul li{
+	list-style: none;
+	width: 100%;
+	height: 30px;
+}
+.ylk ul li a{
+	/* a标签是行内元素 不设置为块级或者行内块就没法设置宽高 */
+	display: block;
+	width: 50%;
+	height: 100%;
+	line-height: 35px;
+	text-align: center;
+	font-size: 18px;
+	font-weight: 700;
+	/* 取消文字下划线 */
+	text-decoration: none;
+	color: #041441;
+	border: 1px solid rgba(198, 217, 237, 0.075);
+	box-shadow: 0 15px 20px #c6d9ed2d;
+	transition: all 0.3s ease-out;
+}
+.ylk ul li a:hover {
+	box-shadow: 0 0 0 #fff, 0 15px 20px #c6d9ed inset;
+}
+.ylk input:checked ~ ul {
+	opacity: 1;
+	transform: scaleY(1);
+}
+/* 移动端的导航栏样式 end */
+
+/* 媒体查询 如果页面的宽度到了992px之后就执行里面的代码 */
+@media (min-width: 992px) {
+	.ylk label {
+		/* pc端 lable元素隐藏 */
+		display: none;
+	}
+	.ylk ul {
+		z-index: 2;
+		/* 让元素到原来的默认的定位属性 */
+		/* 这样上面写的top属性不生效 */
+		position: sticky;
+		/* 弹性布局 */
+		display: flex;
+		/* 让元素平均分配宽度 */
+		justify-content: space-around;
+		/* 让元素垂直居中 */
+		align-items: center;
+		width: 1100px;
+		height: 100%;
+		margin: 0 auto;
+		/* 这里这着两个值是为了避免复选框未选中状态下 ul会继承移动端的属性 所以这里替换一下 */
+		opacity: 1;
+		transform: scaleY(1);
+	}
+	.ylk ul li {
+		text-align: center;
+	}
+	.ylk ul li a {
+		/* 让元素还原到原来的行内属性 这样宽高就不生效 */
+		display: inline;
+		padding: 20px 40px;
+		border-radius: 60px;
+		box-shadow: 5px 3px 6px 1px #c6d9ed, -5px -3px 6px 1px #fff;
+	}
+	.ylk ul li a:hover {
+		box-shadow: 0 0 0 #fff, 0 0 0 #fff, 5px 3px 6px 1px #c6d9ed inset,
+			-5px -3px 6px 1px #fff inset;
+	}
+}
+/*主题变换图标*/
+.ztbhtp{
+	width: 25px;
+	height: 25px;
+	position: relative;
+	margin: -80px 0 0 98%;
+}
+/*隐藏文字*/
+.tuxia{
+	z-index: 1;
+	text-align:center;
+	width: 100%;
+	height: 50px;
+	float: left;
+	background-color: red;
+	margin: 1% 0px 0px 0px ;
+	padding:20px 0px 0px 0px;
+}
+.tuxia a{
+	text-align:center;
+	z-index: 1;
+	
+	color:#FFF;
+	width: 300px;
+	height: 50px;
+
+}
+/*正文主体*/
+.zt{
+	
+	width: auto;
+	z-index: 1;
+	height: auto;
+	margin: 40% 0px 0px 0px;
+}
+.ztu{
+	width: 100%;
+	height: 1600px;
+	z-index: 1;
+	width: 100%;
+	/*background-color: #f0f0f05d;*/
+	list-style: none;
+	
+}
+
+/*主体文字栏盒子*/
+.box{
+	z-index: 1;
+	width: 250px;
+	height: 130px;
+	margin: 0 0 7% 11%;
+	background: #d9e2fa;
+	/*opacity: 0.5;*/
+	box-shadow: 0 0 0 #fff, 0 15px 20px #c6d9ed inset;
+}
+.box:hover{
+	box-shadow: 3px 21px 3px 3px #bcbcbd;
+	/*20px 20px 6px 1px #fff*/
+}
+.boxone{
+	transition: width 2s ease ;
+}
+/*box ul*/
+.ztuul{
+	list-style: none;
+}
+/*@media (max-width: 540px) {
+	.boxone{
+		margin-top: 500px;
+	}
+}*/
+/*宽度大于992时，变化*/
+@media (min-width: 992px) {
+	.boxone:hover{
+		width: 48%;
+	}
+}
+@media (min-width: 1100px) {
+	.boxone:hover{
+		width: 53%;
+	}
+}
+@media (min-width: 1400px) {
+	.boxone:hover{
+		width: 55%;
+	}
+}
+@media (min-width: 1600px) {
+	.boxone:hover{
+		width: 58%;
+	}
+}
+@media (min-width: 1700px) {
+	.boxone:hover{
+		width: 63%;
+	}
+
+}
+/*宽小于992时，变化*/
+@media (max-width: 992px) {
+	.box{
+		margin: 15% 0 30px 10%;
+	}
+	.ztuul{
+		list-style: none;
+		margin: 10% 0 30px 10%;
+	}
+	.boxone:hover{
+		width: 80%;
+	}
+}
+/*切换页面后状态*/
+.newboxone{
+	width:48%;
+}
+/*宽大于992时，变化*/
+@media (min-width: 992px) {
+	.newboxone{
+		width: 48%;
+	}
+}
+@media (min-width: 1100px) {
+	.newboxone{
+		width: 50%;
+	}
+}
+@media (min-width: 1400px) {
+	.newboxone{
+		width: 55%;
+	}
+	.ztuul{
+		margin-top: 45%;
+	}
+}
+@media (min-width: 1600px) {
+	.box{
+		margin: 100px 0 30px 10%;
+	}
+	.newboxone{
+		width: 58%;
+	}
+	.ztuul{
+		margin-top: 45%;
+	}
+}
+/*宽度大于1700时，变化*/
+@media (min-width: 1700px) {
+	.box{
+		margin: 5% 0 30px 10%;
+	}
+	.ztuul{
+		margin-top: 45%;
+	}
+	.newboxone{
+		width: 60%;
+	}
+
+}
+/*宽度小于960时，变化*/
+@media (max-width: 960px) {
+	.box{
+		margin: 15% 0 30px 10%;
+	}
+	.ztuul{
+		list-style: none;
+		margin: -55% 5% 30px 5%;
+	}
+	.newboxone{
+		width: 80%;
+	}
+}
+
+/*高度小于770时，消减控件*/
+@media (max-height:770px ) {
+	.tx_ss{
+		display: none;
+	}
+	.ztuul{
+		margin-top: 55%;
+	}
+	.headbg2{
+		height: 80%;
+		
+	}
+
+}
+/*宽度小于550时，消减控件*/
+@media (max-width:550px) {
+	@media (min-height:770px) {
+		.tuxia{
+			display: none;
+		}
+	}
+	.ztu{
+		margin:  -60% 0 0 0;
+	}
+	.box{
+		margin: 10px 0 0 0;
+		width: 100%;
+		height: 250px;
+
+	}
+	.bg{
+		margin: -150% 0px 0px 0px;
+	}
+	.box:hover{
+		box-shadow: 3px 3px 3px 3px #bcbcbd, 2px 2px 2px 1px #fff;
+	}
+}
+/*高度小于600时*/
+@media (max-height:500px) {
+	.ztuul{
+		margin-top: 65%;
+	}
+
+	
+}
+/*宽小于460时，变化*/
+@media (max-width: 460px) {
+	.ztuul{
+		margin: -55% 0 30px 2%;
+	}
+}
+/*页码栏配置*/
+.ymlpz{
+	z-index: 1;
+	width: 30%;
+	height: 70px;
+	margin: -50px 0 50px 40%;
+	text-align: center;
+}
+.ymlpz2{
+	z-index: 1;
+	width: 30%;
+	height: 70px;
+	margin: -50px 0 50px 40%;
+	text-align: center;
+}
+.ulsk{
+	margin: 0 0 50px 0;
+	list-style: none;
+	text-align: center;
+}
+/*后两个控件*/
+.ulsklia{
+	padding-top: 1px;
+}
+.ulsklia2{
+	padding-top: 1px;
+}
+/*页码样式*/
+.ymlys{
+	width: 30px;
+	height: 30px;
+	float: left;
+	background-color: #fff;
+	margin: 0 20px 0 0;
+	box-shadow: 0 0 0 #fff, 0 1px 1px #c6d9ed inset;
+}
+.ymlys:hover{
+	box-shadow: 1px 1px 3px 3px #c6d9ed, 2px 2px 3px 1px #fff;
+}
+.ymlays{
+	display: block;
+	width: 30px;
+	height: 25px;
+	margin-top: 5px;
+	font-size: 15px;
+	background-color: #fff;
+	color: rgb(4, 139, 250);
+	text-decoration: none;
+}
+
+/*页面小于600时页码栏状态*/
+@media (max-width:700px) {
+	.ymlpz,.ymlpz2{
+		margin: 700px 0 0px 100px;
+		width: 60%;
+	}
+}
+/*页面小于550时页码栏状态*/
+@media (max-width:550px) {
+	.ymlpz,.ymlpz2{
+		margin: 580px 0 0px 120px;
+		width: 60%;
+	}
+}
+/*页面大于662时页码栏状态*/
+@media (min-width:1000px) {
+	.ymlpz{
+		margin: -30px 0 0px 43.5%;
+		width: 30%;
+	}
+	.ymlpz2{
+		margin: -30px 0 0px 41%;
+		width: 30%;
+	}
+}
+/*页面小于800时页码栏状态*/
+@media (max-width:850px) {
+	.ymlpz,.ymlpz2{
+		margin: -50px 0 0px 30%;
+		width: 60%;
+	}
+}
+/*主体文章样式*/
+.divlm{
+	z-index: 0;
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+/*图片*/
+.lmtpys{
+	z-index: 0;
+	margin: 10px 0 0 10px;
+	max-width: 9%;
+	height: 80%;
+
+}
+/*标题*/
+.lmbiaoti{
+	z-index: 1;
+	height: 20px;
+	position:static;
+	overflow: hidden;
+	font-size: 15px;
+	margin: -95px 0 0 14%;
+}
+/*p标签*/
+.plm{
+	height: 80px;
+	text-align: center;
+	font-size: 12px;
+	overflow: hidden;
+	margin: 0 0 0 11%;
+}
+/**/
+.wzlmdl{
+	width: 100%;
+	height: 24px;
+	background-color: violet;
+	overflow: hidden;
+}
+/*文章时间*/
+.lmsj{
+	color: blueviolet;
+	font-size: 12px;
+	size: 10px;
+	margin: 0 0 0 5%;
+}
+.lmsjys{
+	width: 20px;
+	height: 20px;
+	border-radius: 10px;
+	display: inline-block;
+	position: relative;
+	bottom: 20px;
+	right: 15px; 
+}
+/*文章评论*/
+.lmpl{
+	color: blueviolet;
+	width: 20px;
+	height: 20px;
+	font-size: 12px;
+	position: relative;
+	margin: 0 0 0 5%;
+}
+/*文章阅读*/
+.lmyd{
+	color: blueviolet;
+	width: 20px;
+	height: 20px;
+	font-size: 12px;
+	position: relative;
+	margin: 0 0 0 5%;
+}
+/*文章作者*/
+.lmzz{
+	color: blueviolet;
+	width: 5px;
+	margin: 0 0 0 4%;
+	font-size: 12px;
+}
+/*文章作者*/
+.lmdz{
+	color: blueviolet;
+	width: 5px;
+	margin: 0 0 0 4%;
+	font-size: 12px;
+}
+/*阅读全文*/
+.ydqw{
+	color: blueviolet;
+	/*width: 50px;
+	height: 26px;*/
+	font-size: 12px;
+	size: 5px;
+	margin: -15px 0 0 90%;
+}
+.ydqwin{
+	color: blueviolet;
+	background-color:rgba(238, 130, 238, 0.438);
+	font-size: 12px;
+	border: none;
+}
+
+/*底部栏*/
+.dilandiv{
+	color: #848484;
+	position: relative;
+	z-index: 0;
+	width: 100%;
+	height: 200px;
+	background-color: #484949;
+	padding: 100px 0 0 0;
+}
+.dlwbjl{
+	width: 100%;
+	height: 100px;
+	margin: 0 0 0 0;
+}
+.dlp{
+	   width:390px;
+       text-align: center;
+	   margin: 0 0 0 37%;
+}
+.dla{
+	
+	color: #007cba;
+}
+.dla2{
+	color: #007cba;
+}
+.dla3{
+	color: #007cba;
+}
+.dla4{
+	font-size: 12px;
+}
+/*页面小于700时底部栏状态*/
+@media (max-width:700px) {
+	.dlp{
+		margin: 700px 0 0px 100px;
+		width: 60%;
+	}
+}
+/*页面小于850时底部栏状态*/
+@media (max-width:850px) {
+	.dlp{
+		margin: 0 0 0px 23%;
+	}
+}
+/*页面小于550时底部栏状态*/
+@media (max-width:550px) {
+	.dlp{
+		margin: 0 0 0 100px;
+	}
+}
+/*页面小于550时底部栏状态*/
+@media (min-width:1000px) {
+	.dlp{
+		margin: 0 0 0 40%;
+	}
+}
+/*时间样式*/
+.sjays{
+	position: relative;
+	font-size: 13px;
+}

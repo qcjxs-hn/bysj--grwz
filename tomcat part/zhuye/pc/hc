@@ -1,0 +1,32 @@
+/*if(dljl.equals("1")){
+    //success=session.getAttribute("success").toString();       
+    String surl="jdbc:mysql://localhost:3306/user?user=root&password=123456";
+    Class.forName("com.mysql.jdbc.Driver");
+    Connection slj =DriverManager.getConnection(surl);
+    String srs="update usertable set success=? where user=?";
+    PreparedStatement updatesuccess = slj.prepareStatement(srs);
+    updatesuccess.setString(1,"0");
+    updatesuccess.setString(2,newuser);
+    updatesuccess.executeUpdate();
+    //out.print(dljl);
+    Cookie newcgurcookie=new Cookie("newcgur","");
+    Cookie dljlcookie=new Cookie("dljl","0");
+    response.addCookie(newcgurcookie);
+    response.addCookie(dljlcookie);
+}*/
+/*if(dljl.equals("1")){
+    //success=session.getAttribute("success").toString();       
+    String surl="jdbc:mysql://localhost:3306/user?user=root&password=123456";
+    Class.forName("com.mysql.jdbc.Driver");
+    Connection slj =DriverManager.getConnection(surl);
+    String srs="update usertable set success=? where user=?";
+    PreparedStatement updatesuccess = slj.prepareStatement(srs);
+    updatesuccess.setString(1,"0");
+    updatesuccess.setString(2,newuser);
+    updatesuccess.executeUpdate();
+    //out.print(dljl);
+    Cookie newcgurcookie=new Cookie("newcgur","");
+    Cookie dljlcookie=new Cookie("dljl","0");
+    response.addCookie(newcgurcookie);
+    response.addCookie(dljlcookie);
+}*/

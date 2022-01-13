@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a class="dla4" onclick="fun(this)" id="dla4" ><i class="fa fa-refresh fa-spin"></i>更改网页显示模式</a>
+    <script>
+function getCookie(name) {
+    /*获取cookie*/
+    var czz=name+'=';
+    var xyz=document.cookie.split(';');
+    for (let index = 0; index < xyz.length; index++) {
+      var newxyz = xyz[index];
+      /*清除字符段空格 */
+      while (newxyz.charAt(0)==' ') {
+        newxyz =newxyz.substring(1,xyz.length);
+      }
+      /*如果有就剪切 */
+      if (newxyz.indexOf(czz)==0) {
+         return unescape(newxyz.substring(czz.length,newxyz.length));
+      }
+    }
+    
+  }
+        function fun(dla4) {
+                /*完成指定动作*/
+              var mz="ymdh";
+              alert(getCookie("ymdh"));
+              if(getCookie("ymdh")=="1"){
+                document.cookie=mz+"="+"0";
+                window.location.reload(true);
+              }
+              else{
+                document.cookie=mz+"="+"1";
+                window.location.reload(true);
+              }
+
+              }
+              </script>
+</body>
+</html>

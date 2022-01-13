@@ -1,0 +1,39 @@
+.ztbhtp{
+    list-style: none;
+    color: white;
+    z-index: 3;
+    width: 25px; 
+    height: 25px;
+    margin: -50px 0 0 99%;
+    }
+.canvashy{
+      list-style: none;
+        z-index: 2;
+        width: 100px; 
+        height: 100px;
+        border-radius: 100px;
+        margin:  -260px 0 0 97%;
+        border: 60px solid rgb(20, 20, 61); 
+        cursor: pointer;
+}
+.ztbhdiv{
+    z-index: 3;
+position: relative;
+margin: 0 -50px 0 0;
+}
+@media (max-width: 992px) {
+    .ztbhtp{
+        margin: -65px 0 0 98.5%;
+    }
+    .canvashy{
+        margin:  -340px 0 0 97%;
+    }
+}
+@media (max-width: 500px) {
+    .ztbhtp{
+        margin: -67px 0 0 96%;
+    }
+    .canvashy{
+        margin:  -350px 0 0 93%;
+    }
+}
