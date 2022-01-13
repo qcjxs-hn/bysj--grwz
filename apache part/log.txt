@@ -1,0 +1,517 @@
+ 
+log File 
+ 
+User : hannuo 
+2021/10/15 周五 
+11:28
+ 
+Process Ran by hannuo 
+ 
+
+映像名称                       PID 会话名              会话#       内存使用 
+========================= ======== ================ =========== ============
+System Idle Process              0 Services                   0          8 K
+System                           4 Services                   0      2,772 K
+Registry                       148 Services                   0    144,052 K
+smss.exe                       620 Services                   0      1,292 K
+csrss.exe                      864 Services                   0      5,756 K
+wininit.exe                    996 Services                   0      7,360 K
+csrss.exe                     1004 Console                    1      6,916 K
+services.exe                   804 Services                   0     11,972 K
+lsass.exe                      812 Services                   0     11,396 K
+svchost.exe                   1096 Services                   0     15,352 K
+fontdrvhost.exe               1124 Services                   0         12 K
+svchost.exe                   1188 Services                   0     11,472 K
+winlogon.exe                  1264 Console                    1      2,144 K
+svchost.exe                   1272 Services                   0      4,200 K
+fontdrvhost.exe               1340 Console                    1     12,864 K
+svchost.exe                   1468 Services                   0      3,384 K
+svchost.exe                   1512 Services                   0      1,552 K
+svchost.exe                   1568 Services                   0      1,672 K
+svchost.exe                   1572 Services                   0      2,376 K
+svchost.exe                   1584 Services                   0      1,488 K
+svchost.exe                   1652 Services                   0      2,032 K
+svchost.exe                   1660 Services                   0      2,376 K
+svchost.exe                   1784 Services                   0      1,232 K
+svchost.exe                   1848 Services                   0      8,792 K
+svchost.exe                   1920 Services                   0      6,100 K
+svchost.exe                   1964 Services                   0     10,204 K
+svchost.exe                   2000 Services                   0      5,436 K
+svchost.exe                   2084 Services                   0        532 K
+svchost.exe                   2092 Services                   0      4,724 K
+svchost.exe                   2168 Services                   0      3,720 K
+svchost.exe                   2272 Services                   0      2,664 K
+svchost.exe                   2284 Services                   0      1,368 K
+amdfendrsr.exe                2352 Services                   0      1,152 K
+atiesrxx.exe                  2360 Services                   0        112 K
+svchost.exe                   2436 Services                   0      1,464 K
+svchost.exe                   2444 Services                   0      4,796 K
+svchost.exe                   2540 Services                   0      4,840 K
+svchost.exe                   2584 Services                   0      1,400 K
+svchost.exe                   2824 Services                   0      1,056 K
+svchost.exe                   2832 Services                   0         16 K
+svchost.exe                   2912 Services                   0      2,100 K
+svchost.exe                   2968 Services                   0      1,748 K
+dasHost.exe                   2164 Services                   0      4,040 K
+svchost.exe                   1412 Services                   0      4,944 K
+svchost.exe                   2476 Services                   0        712 K
+svchost.exe                   3080 Services                   0      3,668 K
+atieclxx.exe                  3116 Console                    1      5,164 K
+Memory Compression            3180 Services                   0    251,020 K
+svchost.exe                   3220 Services                   0      4,388 K
+svchost.exe                   3248 Services                   0      4,672 K
+svchost.exe                   3256 Services                   0     13,716 K
+svchost.exe                   3540 Services                   0      2,252 K
+svchost.exe                   3716 Services                   0      2,160 K
+svchost.exe                   3816 Services                   0      7,660 K
+svchost.exe                   3872 Services                   0      9,252 K
+Start10Srv.exe                3908 Services                   0         36 K
+svchost.exe                   4020 Services                   0     12,136 K
+Start10_64.exe                4084 Console                    1        584 K
+svchost.exe                   3440 Services                   0      6,224 K
+svchost.exe                   3432 Services                   0      2,300 K
+svchost.exe                   3020 Services                   0      1,124 K
+svchost.exe                   3464 Services                   0      3,140 K
+svchost.exe                   3504 Services                   0      3,660 K
+svchost.exe                   3836 Services                   0      2,136 K
+svchost.exe                   4156 Services                   0      2,336 K
+svchost.exe                   4188 Services                   0     27,140 K
+svchost.exe                   4204 Services                   0      8,100 K
+svchost.exe                   4292 Services                   0      3,716 K
+spoolsv.exe                   4364 Services                   0        536 K
+svchost.exe                   4524 Services                   0     16,860 K
+svchost.exe                   4568 Services                   0      1,948 K
+svchost.exe                   4712 Services                   0     18,448 K
+svchost.exe                   4728 Services                   0      2,464 K
+svchost.exe                   4736 Services                   0     10,584 K
+svchost.exe                   4744 Services                   0      1,824 K
+svchost.exe                   4760 Services                   0      1,812 K
+inetinfo.exe                  4772 Services                   0      1,992 K
+svchost.exe                   4780 Services                   0      7,096 K
+svchost.exe                   4788 Services                   0      1,620 K
+MemuService.exe               4796 Services                   0         44 K
+svchost.exe                   4808 Services                   0         16 K
+PnkBstrA.exe                  4816 Services                   0        260 K
+phtunnel.exe                  4824 Services                   0      1,412 K
+QQProtect.exe                 4832 Services                   0     14,252 K
+svchost.exe                   4852 Services                   0         16 K
+sqlwriter.exe                 4880 Services                   0      1,716 K
+FNPLicensingService.exe       4892 Services                   0      2,396 K
+svchost.exe                   4916 Services                   0      1,364 K
+svchost.exe                   4932 Services                   0     10,236 K
+svchost.exe                   4964 Services                   0         16 K
+SMSvcHost.exe                 4996 Services                   0      1,688 K
+mysqld.exe                    5020 Services                   0        884 K
+vmnetdhcp.exe                 5104 Services                   0        392 K
+vmnat.exe                     4272 Services                   0        424 K
+vmware-usbarbitrator64.ex     5144 Services                   0      3,388 K
+svchost.exe                   5224 Services                   0     13,756 K
+WifiAutoInstall.exe           5284 Services                   0      1,328 K
+MsMpEng.exe                   5292 Services                   0    307,664 K
+svchost.exe                   5300 Services                   0      1,612 K
+OriginWebHelperService.ex     5316 Services                   0      3,880 K
+ZapyaService.exe              5360 Services                   0      8,688 K
+svchost.exe                   5396 Services                   0      1,468 K
+svchost.exe                   5404 Services                   0      2,900 K
+wallpaperservice32_c.exe      5424 Services                   0         48 K
+service.exe                   5460 Services                   0         48 K
+svchost.exe                   5744 Services                   0        532 K
+Everything.exe                5984 Services                   0        580 K
+HskDDNSMaint.exe              6004 Services                   0         44 K
+svchost.exe                   6012 Services                   0      2,604 K
+conhost.exe                   6048 Services                   0         12 K
+XZSS.exe                      6096 Services                   0      4,284 K
+vivoesService_x64.exe         6132 Services                   0      2,340 K
+SMSvcHost.exe                 6588 Services                   0      1,920 K
+WmiPrvSE.exe                  7132 Services                   0     17,740 K
+WmiPrvSE.exe                  7356 Services                   0     12,364 K
+svchost.exe                   7392 Services                   0      6,748 K
+vmware-authd.exe              7476 Services                   0      1,972 K
+svchost.exe                   7852 Services                   0        620 K
+svchost.exe                   7076 Services                   0     23,096 K
+svchost.exe                   7956 Services                   0      8,832 K
+vmware-hostd.exe              8648 Services                   0      7,880 K
+NisSrv.exe                    8780 Services                   0     12,800 K
+svchost.exe                   9000 Services                   0      1,060 K
+svchost.exe                   9020 Services                   0      3,148 K
+svchost.exe                   9128 Services                   0     10,544 K
+dwm.exe                       8052 Console                    1     50,384 K
+svchost.exe                   7604 Services                   0         16 K
+sihost.exe                    7776 Console                    1     14,288 K
+svchost.exe                   5040 Console                    1     10,684 K
+svchost.exe                   1620 Console                    1     15,740 K
+AUEPMaster.exe                2056 Console                    1      7,500 K
+taskhostw.exe                 2704 Console                    1     10,500 K
+svchost.exe                   4244 Services                   0     11,232 K
+svchost.exe                   4984 Services                   0      7,800 K
+explorer.exe                  5368 Console                    1    121,328 K
+svchost.exe                   4752 Services                   0      6,032 K
+wallpaper32.exe               6600 Console                    1     40,648 K
+GoogleCrashHandler.exe        9352 Services                   0        440 K
+GoogleCrashHandler64.exe      9384 Services                   0        264 K
+svchost.exe                   9992 Console                    1      4,168 K
+audiodg.exe                  10064 Services                   0      9,720 K
+StartMenuExperienceHost.e     7592 Console                    1     18,860 K
+RuntimeBroker.exe             9724 Console                    1      5,176 K
+SearchApp.exe                 9976 Console                    1         16 K
+RuntimeBroker.exe             7600 Console                    1      6,876 K
+YourPhone.exe                10484 Console                    1         16 K
+svchost.exe                  10680 Services                   0     10,092 K
+svchost.exe                  11160 Services                   0      6,240 K
+svchost.exe                  11240 Services                   0     13,084 K
+svchost.exe                  11248 Services                   0      2,444 K
+svchost.exe                  10964 Services                   0      3,708 K
+svchost.exe                  11176 Services                   0      1,268 K
+RuntimeBroker.exe            11296 Console                    1      4,296 K
+ctfmon.exe                   11644 Console                    1     16,060 K
+TextInputHost.exe            11860 Console                    1     15,120 K
+ChsIME.exe                   12080 Console                    1      1,900 K
+SGTool.exe                   12192 Console                    1     19,352 K
+RuntimeBroker.exe             1428 Console                    1      6,944 K
+RadeonSoftware.exe           11548 Console                    1     77,672 K
+SearchIndexer.exe            11524 Services                   0     26,376 K
+SecurityHealthSystray.exe    11604 Console                    1      3,004 K
+SecurityHealthService.exe    11476 Services                   0     18,432 K
+RtkNGUI64.exe                 9572 Console                    1      8,052 K
+cpumetricsserver.exe          9828 Console                    1      8,592 K
+Everything.exe               10552 Console                    1    186,624 K
+OneDrive.exe                  4384 Console                    1     24,836 K
+CCXProcess.exe                7112 Console                    1         36 K
+node.exe                      7380 Console                    1      6,132 K
+conhost.exe                   8744 Console                    1        316 K
+cncmd.exe                    12172 Console                    1         16 K
+svchost.exe                  12204 Services                   0      3,136 K
+AMDRSServ.exe                 5456 Console                    1     85,324 K
+AdobeIPCBroker.exe           10272 Console                    1      2,644 K
+amdow.exe                    12616 Console                    1      1,108 K
+HskDDNS.exe                  12756 Console                    1      6,348 K
+TabletDriverCore.exe         12952 Console                    1      2,572 K
+XZDesktop64.exe              13032 Console                    1     90,484 K
+Wox.exe                      13040 Console                    1     75,112 K
+XZSearch64.exe                5580 Console                    1     28,944 K
+msedge.exe                   12980 Console                    1     42,020 K
+msedge.exe                   13008 Console                    1      1,740 K
+msedge.exe                    9416 Console                    1      7,024 K
+msedge.exe                    9404 Console                    1     16,616 K
+msedge.exe                   13372 Console                    1      1,048 K
+svchost.exe                  13688 Services                   0      3,192 K
+Cortana.exe                  13796 Console                    1         16 K
+RuntimeBroker.exe            13872 Console                    1      4,980 K
+svchost.exe                  13972 Console                    1      4,284 K
+xampp-control.exe            14032 Console                    1      9,208 K
+baidupinyin.exe              14160 Console                    1     15,280 K
+ZapyaAdaptor.exe             14188 Console                    1     12,216 K
+cmd.exe                      14224 Console                    1         16 K
+conhost.exe                  14276 Console                    1      4,820 K
+vmware-tray.exe              13568 Console                    1      1,092 K
+cmd.exe                      13604 Console                    1         16 K
+Rainmeter.exe                13756 Console                    1     17,772 K
+jusched.exe                  13752 Console                    1      2,976 K
+sunny.exe                    13516 Console                    1      2,608 K
+httpd.exe                    14532 Console                    1        180 K
+conhost.exe                  14540 Console                    1      1,356 K
+cmd.exe                      14608 Console                    1         16 K
+conhost.exe                  14616 Console                    1      4,600 K
+httpd.exe                    14992 Console                    1      5,304 K
+MpCopyAccelerator.exe        15432 Services                   0      7,060 K
+WmiPrvSE.exe                 15828 Services                   0      6,988 K
+java.exe                     15968 Console                    1     20,988 K
+AUEPDU.exe                   16268 Services                   0     10,508 K
+SgrmBroker.exe               11816 Services                   0      9,428 K
+svchost.exe                   9648 Services                   0     20,864 K
+svchost.exe                  14776 Services                   0     13,560 K
+svchost.exe                  15940 Console                    1      2,376 K
+LdsLite.exe                  11036 Console                    1     26,692 K
+ComputerZTray.exe             1300 Console                    1     40,492 K
+guardhp.exe                  12632 Console                    1     13,128 K
+unsecapp.exe                  5868 Console                    1      2,976 K
+ComputerZService.exe         16592 Console                    1     20,012 K
+GoogleUpdate.exe              2464 Services                   0      1,120 K
+svchost.exe                   5576 Services                   0      6,820 K
+svchost.exe                  14780 Console                    1     14,724 K
+ShellExperienceHost.exe       3144 Console                    1     50,996 K
+svchost.exe                  12244 Console                    1      8,132 K
+TabTip.exe                   12960 Console                    1     17,320 K
+firefox.exe                  16788 Console                    1    397,436 K
+firefox.exe                  17332 Console                    1    196,824 K
+firefox.exe                  17328 Console                    1     17,088 K
+firefox.exe                  17036 Console                    1     94,048 K
+SogouCloud.exe                4640 Console                    1     29,300 K
+firefox.exe                  13560 Console                    1     80,984 K
+CompPkgSrv.exe               12444 Console                    1      9,804 K
+firefox.exe                  11704 Console                    1     29,532 K
+firefox.exe                  13160 Console                    1     61,108 K
+firefox.exe                  14760 Console                    1     97,952 K
+AMDRSSrcExt.exe              12576 Console                    1     53,208 K
+DrvMgr.exe                    2480 Console                    1     57,916 K
+firefox.exe                  17580 Console                    1    157,344 K
+firefox.exe                  17436 Console                    1     36,164 K
+Code.exe                     17796 Console                    1    116,724 K
+Code.exe                     17896 Console                    1     25,984 K
+Code.exe                     18148 Console                    1    133,720 K
+Code.exe                     18072 Console                    1     39,256 K
+Code.exe                     17944 Console                    1    182,588 K
+Code.exe                     11168 Console                    1    152,716 K
+Code.exe                     17524 Console                    1     84,312 K
+Code.exe                     17552 Console                    1     69,612 K
+Code.exe                     13352 Console                    1     69,016 K
+java.exe                     18936 Console                    1    167,408 K
+conhost.exe                  19060 Console                    1     11,284 K
+SearchFilterHost.exe         19284 Services                   0     10,788 K
+SearchProtocolHost.exe       18720 Services                   0     15,656 K
+Code.exe                     18868 Console                    1    176,452 K
+Code.exe                     15912 Console                    1    158,992 K
+Code.exe                     19448 Console                    1     76,468 K
+Code.exe                     19292 Console                    1    111,144 K
+CodeSetup-stable-c13f1abb    19036 Console                    1     12,112 K
+CodeSetup-stable-c13f1abb     9672 Console                    1     48,356 K
+dllhost.exe                  18508 Console                    1     11,652 K
+svchost.exe                  19032 Services                   0     11,032 K
+cmd.exe                      19300 Console                    1      5,364 K
+conhost.exe                  17740 Console                    1     28,868 K
+tasklist.exe                 18880 Console                    1      9,780 K
+ 
+Network Activties 
+
+IPv4 统计信息
+
+  接收的数据包                   = 96686
+  接收的标头错误             = 0
+  接收的地址错误            = 0
+  转发的数据报                = 0
+  接收的未知协议         = 0
+  丢弃的接收数据包         = 9
+  传送的接收数据包         = 128146
+  输出请求                    = 92309
+  路由丢弃                   = 0
+  丢弃的输出数据包           = 2102
+  输出数据包无路由             = 73
+  需要重新组合                = 3
+  重新组合成功              = 1
+  重新组合失败                = 0
+  数据报分段成功  = 0
+  数据报分段失败    = 0
+  分段已创建                  = 0
+
+IPv6 统计信息
+
+  接收的数据包                   = 0
+  接收的标头错误             = 0
+  接收的地址错误            = 0
+  转发的数据报                = 0
+  接收的未知协议         = 0
+  丢弃的接收数据包         = 0
+  传送的接收数据包         = 1686
+  输出请求                    = 2165
+  路由丢弃                   = 0
+  丢弃的输出数据包           = 0
+  输出数据包无路由             = 0
+  需要重新组合                = 0
+  重新组合成功              = 0
+  重新组合失败                = 0
+  数据报分段成功  = 0
+  数据报分段失败    = 0
+  分段已创建                  = 0
+
+ICMPv4 统计信息
+
+                            已接收    已发送
+  消息                  338         339       
+  错误                    0           0         
+  目标不可达   337         339       
+  超时             0           0         
+  参数问题        0           0         
+  源抑制           0           0         
+  重定向                 0           0         
+  回显回复              0           0         
+  回显                     1           0         
+  时间戳                0           0         
+  时间戳回复         0           0         
+  地址掩码             0           0         
+  地址掩码回复      0           0         
+  路由器请求      0           0         
+  路由器播发     0           0         
+
+ICMPv6 统计信息
+
+                            已接收    已发送
+  消息                  0           30        
+  错误                    0           0         
+  目标不可达   0           0         
+  数据包太大            0           0         
+  超时             0           0         
+  参数问题        0           0         
+  回显                     0           0         
+  回显回复              0           0         
+  MLD 查询               0           0         
+  MLD 报告               0           0         
+  MLD 已完成                 0           0         
+  路由器请求      0           18        
+  路由器播发     0           0         
+  邻居请求    0           6         
+  邻居播发   0           6         
+  重定向                 0           0         
+  路由器重新编号       0           0         
+
+IPv4 的 TCP 统计信息
+
+  主动开放                        = 641
+  被动开放                       = 32
+  失败的连接尝试          = 138
+  重置连接                   = 48
+  当前连接                 = 108
+  接收的分段                   = 125385
+  发送的分段                       = 65888
+  重新传输的分段              = 0
+
+IPv6 的 TCP 统计信息
+
+  主动开放                        = 4
+  被动开放                       = 3
+  失败的连接尝试          = 1
+  重置连接                   = 0
+  当前连接                 = 0
+  接收的分段                   = 56
+  发送的分段                       = 26
+  重新传输的分段              = 0
+
+IPv4 的 UDP 统计信息
+
+  接收的数据报    = 3024
+  无端口              = 11
+  接收错误        = 0
+  发送的数据报        = 4668
+
+IPv6 的 UDP 统计信息
+
+  接收的数据报    = 1638
+  无端口              = 0
+  接收错误        = 0
+  发送的数据报        = 1652
+
+Windows IP 配置
+
+   主机名  . . . . . . . . . . . . . : MIKU-20191126HL
+   主 DNS 后缀 . . . . . . . . . . . : 
+   节点类型  . . . . . . . . . . . . : 混合
+   IP 路由已启用 . . . . . . . . . . : 否
+   WINS 代理已启用 . . . . . . . . . : 否
+   DNS 后缀搜索列表  . . . . . . . . : www.tendawifi.com
+
+以太网适配器 以太网 2:
+
+   媒体状态  . . . . . . . . . . . . : 媒体已断开连接
+   连接特定的 DNS 后缀 . . . . . . . : 
+   描述. . . . . . . . . . . . . . . : Microsoft KM-TEST Loopback Adapter
+   物理地址. . . . . . . . . . . . . : 00-FF-9C-83-9F-B3
+   DHCP 已启用 . . . . . . . . . . . : 否
+   自动配置已启用. . . . . . . . . . : 是
+
+以太网适配器 VMware Network Adapter VMnet1:
+
+   连接特定的 DNS 后缀 . . . . . . . : 
+   描述. . . . . . . . . . . . . . . : VMware Virtual Ethernet Adapter for VMnet1
+   物理地址. . . . . . . . . . . . . : 00-50-56-C0-00-01
+   DHCP 已启用 . . . . . . . . . . . : 否
+   自动配置已启用. . . . . . . . . . : 是
+   本地链接 IPv6 地址. . . . . . . . : fe80::3166:9ab5:7afe:f555%14(首选) 
+   IPv4 地址 . . . . . . . . . . . . : 192.168.1.5(首选) 
+   子网掩码  . . . . . . . . . . . . : 255.255.255.0
+   默认网关. . . . . . . . . . . . . : 0.0.0.0
+                                       192.168.1.1
+   DNS 服务器  . . . . . . . . . . . : fec0:0:0:ffff::1%1
+                                       fec0:0:0:ffff::2%1
+                                       fec0:0:0:ffff::3%1
+   TCPIP 上的 NetBIOS  . . . . . . . : 已启用
+
+以太网适配器 VMware Network Adapter VMnet8:
+
+   连接特定的 DNS 后缀 . . . . . . . : 
+   描述. . . . . . . . . . . . . . . : VMware Virtual Ethernet Adapter for VMnet8
+   物理地址. . . . . . . . . . . . . : 00-50-56-C0-00-08
+   DHCP 已启用 . . . . . . . . . . . : 是
+   自动配置已启用. . . . . . . . . . : 是
+   本地链接 IPv6 地址. . . . . . . . : fe80::5541:91b9:1891:a8fc%6(首选) 
+   IPv4 地址 . . . . . . . . . . . . : 192.168.222.1(首选) 
+   子网掩码  . . . . . . . . . . . . : 255.255.255.0
+   获得租约的时间  . . . . . . . . . : 2021年10月15日 11:20:07
+   租约过期的时间  . . . . . . . . . : 2021年10月15日 11:50:07
+   默认网关. . . . . . . . . . . . . : 
+   DHCP 服务器 . . . . . . . . . . . : 192.168.222.254
+   DHCPv6 IAID . . . . . . . . . . . : 520114262
+   DHCPv6 客户端 DUID  . . . . . . . : 00-01-00-01-25-6E-74-B9-40-B0-76-47-D7-01
+   DNS 服务器  . . . . . . . . . . . : fec0:0:0:ffff::1%1
+                                       fec0:0:0:ffff::2%1
+                                       fec0:0:0:ffff::3%1
+   主 WINS 服务器  . . . . . . . . . : 192.168.222.2
+   TCPIP 上的 NetBIOS  . . . . . . . : 已启用
+
+以太网适配器 VMware Network Adapter VMnet5:
+
+   连接特定的 DNS 后缀 . . . . . . . : 
+   描述. . . . . . . . . . . . . . . : VMware Virtual Ethernet Adapter for VMnet5
+   物理地址. . . . . . . . . . . . . : 00-50-56-C0-00-05
+   DHCP 已启用 . . . . . . . . . . . : 否
+   自动配置已启用. . . . . . . . . . : 是
+   本地链接 IPv6 地址. . . . . . . . : fe80::8525:1b0:17dd:6c4c%18(首选) 
+   IPv4 地址 . . . . . . . . . . . . : 192.168.2.4(首选) 
+   子网掩码  . . . . . . . . . . . . : 255.255.255.0
+   默认网关. . . . . . . . . . . . . : 192.168.2.107
+   DNS 服务器  . . . . . . . . . . . : 192.168.2.107
+   TCPIP 上的 NetBIOS  . . . . . . . : 已启用
+
+以太网适配器 VMware Network Adapter VMnet3:
+
+   连接特定的 DNS 后缀 . . . . . . . : 
+   描述. . . . . . . . . . . . . . . : VMware Virtual Ethernet Adapter for VMnet3
+   物理地址. . . . . . . . . . . . . : 00-50-56-C0-00-03
+   DHCP 已启用 . . . . . . . . . . . : 否
+   自动配置已启用. . . . . . . . . . : 是
+   本地链接 IPv6 地址. . . . . . . . : fe80::b942:c6bb:ce0c:8166%30(首选) 
+   IPv4 地址 . . . . . . . . . . . . : 192.168.0.115(首选) 
+   子网掩码  . . . . . . . . . . . . : 255.255.255.0
+   默认网关. . . . . . . . . . . . . : 192.168.0.107
+   DNS 服务器  . . . . . . . . . . . : 192.168.0.107
+   TCPIP 上的 NetBIOS  . . . . . . . : 已启用
+
+以太网适配器 VMware Network Adapter VMnet9:
+
+   连接特定的 DNS 后缀 . . . . . . . : 
+   描述. . . . . . . . . . . . . . . : VMware Virtual Ethernet Adapter for VMnet9
+   物理地址. . . . . . . . . . . . . : 00-50-56-C0-00-09
+   DHCP 已启用 . . . . . . . . . . . : 否
+   自动配置已启用. . . . . . . . . . : 是
+   本地链接 IPv6 地址. . . . . . . . : fe80::9d24:5161:9fef:2a20%29(首选) 
+   IPv4 地址 . . . . . . . . . . . . : 192.168.2.5(首选) 
+   子网掩码  . . . . . . . . . . . . : 255.255.255.0
+   默认网关. . . . . . . . . . . . . : 192.168.2.107
+   DNS 服务器  . . . . . . . . . . . : 192.168.2.107
+   TCPIP 上的 NetBIOS  . . . . . . . : 已启用
+
+以太网适配器 以太网 4:
+
+   连接特定的 DNS 后缀 . . . . . . . : www.tendawifi.com
+   描述. . . . . . . . . . . . . . . : Realtek PCIe GbE Family Controller #2
+   物理地址. . . . . . . . . . . . . : 40-B0-76-47-D7-01
+   DHCP 已启用 . . . . . . . . . . . : 是
+   自动配置已启用. . . . . . . . . . : 是
+   本地链接 IPv6 地址. . . . . . . . : fe80::a41d:6174:ee3:4ecb%7(首选) 
+   IPv4 地址 . . . . . . . . . . . . : 192.168.0.106(首选) 
+   子网掩码  . . . . . . . . . . . . : 255.255.255.0
+   获得租约的时间  . . . . . . . . . : 2021年10月15日 11:20:19
+   租约过期的时间  . . . . . . . . . : 2021年10月16日 11:20:08
+   默认网关. . . . . . . . . . . . . : 192.168.0.1
+   DHCP 服务器 . . . . . . . . . . . : 192.168.0.1
+   DHCPv6 IAID . . . . . . . . . . . : 121679990
+   DHCPv6 客户端 DUID  . . . . . . . : 00-01-00-01-25-6E-74-B9-40-B0-76-47-D7-01
+   DNS 服务器  . . . . . . . . . . . : 192.168.0.1
+   TCPIP 上的 NetBIOS  . . . . . . . : 已启用
+
+以太网适配器 蓝牙网络连接 4:
+
+   媒体状态  . . . . . . . . . . . . : 媒体已断开连接
+   连接特定的 DNS 后缀 . . . . . . . : 
+   描述. . . . . . . . . . . . . . . : Bluetooth Device (Personal Area Network) #4
+   物理地址. . . . . . . . . . . . . : 00-1A-7D-DA-71-13
+   DHCP 已启用 . . . . . . . . . . . : 是
+   自动配置已启用. . . . . . . . . . : 是
