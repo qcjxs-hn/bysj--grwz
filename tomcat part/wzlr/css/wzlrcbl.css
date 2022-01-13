@@ -1,0 +1,261 @@
+@charset "utf-8";
+/* CSS Document */
+/*右边栏*/
+
+.tx_ss{
+	z-index: 0;
+	display: block;
+	overflow: none;
+	text-align-last: center;
+	width: 200px;
+	float:right;
+	margin: 0 10% 0 0;
+	height: 100px;
+	background-image: url(https://www.qc-h.xyz/zhuye/gjtp/tx-tpbg.jpg) ;
+	box-shadow: 0 2px 4px rgba(0,0,0,.1);
+	background-attachment:scroll;
+	padding: 50px;
+	}
+	.tx_tb{
+		width: 80px;
+		height: 80px;
+		margin: 20px 0 0 0;
+		border: 3px solid #FFF;
+		border-radius: 50%;
+		box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.3);
+		transition: all .5s;
+	}
+	.tx_li{
+		box-shadow: 0 2px 4px rgba(0,0,0,.1);
+	}
+	/*名字字体颜色*/
+	.mingzi{
+		font-style:normal;
+		font-size: 20px;
+		color: #fff;
+	}
+	/*右边栏消减*/
+	@media (max-width: 992px) {
+		.tx_ss{
+			display: none;
+		}
+		
+	}
+	.zxplfrom{
+		width: 100%;
+		height: 300px;
+		margin: 20px 0 0 0;
+	}
+	.zxpl{
+		width: 90%;
+		height: 40px;
+	}
+	.zxplan{
+		width: 91%;
+		height: 25px;
+	}
+/*评论用户p标签*/
+.plusercbp{
+	width: 90%;
+	height: 50px;
+	background-color: #007cba5b;
+	box-shadow: 0 2px 4px rgba(0,0,0,.1);
+}
+/*评论用户头像*/
+.plusercbtp{
+	width: 30px;
+	height: 30px;
+	margin: 2% 0 0 5%;
+	border: 1px solid #FFF;
+	border-radius: 50%;
+	box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.3);
+	transition: all .5s;
+}
+/*评论a标签名字*/
+.plusercbdiv1{
+	width: 30px;
+	height: 30px;
+	margin: -40px 0 0 15%;
+}
+.plusercba1{
+	width: 220px;
+	height: 30px;
+	display: block;
+	position: relative;
+	color: rgba(134, 134, 134, 0.562);
+	font-size: 15px;
+	margin: 0 0 0px 10%;
+	overflow: hidden;
+}
+/*评论a标签评论*/
+.plusercbdiv2{
+	width: 30px;
+	height: 30px;
+	margin: -30px 0 0 14%;
+}
+.plusercba2{
+	display: block;
+	color: rgba(15, 15, 15, 0.472);
+	font-size: 12px;
+	width: 220px;
+	height: auto;
+	margin: 0 0 0 16%;
+	overflow: hidden;
+}
+/*评论a标签评论*/
+.plusercbdiv3{
+	width: 30px;
+	height: 30px;
+	margin: -45px 0 0 65%;
+}
+.plusercba3{
+	display: block;
+	color: rgba(15, 15, 15, 0.472);
+	font-size: 12px;
+	width: 220px;
+	height: auto;
+	margin: 0 0 0 16%;
+	overflow: hidden;
+}
+/*右边栏白块*/
+.baikuai{
+	z-index: 0;
+    display: block;
+	width: 300px;
+	height: 600px;
+	float: right;
+	margin: 210px -300px 0 0;
+	box-shadow: 0 2px 4px rgba(0,0,0,.1);
+	background-color: #dddddd;
+}
+/*评论*/
+.pldiv{
+	position: relative;
+	width: 300px;
+	height: 80px;
+	margin: 15px 0 0 15px;
+}
+.plp{
+	position: relative;
+	width: 60px;
+	height: 20px;
+	font-size: 15px;
+	border-bottom: #07a4f3 2px solid;
+}
+/*右边栏白块2*/
+.baikuai2{
+	z-index: 0;
+    display: block;
+	width: 300px;
+	height: 320px;
+	float: right;
+	margin: 820px -300px 0 0;
+	background-color: #dddddd;
+	box-shadow: 0 2px 4px rgba(0,0,0,.1);
+}
+/*友情联接div*/
+.yqljdiv{	
+	position: relative;
+	width: 300px;
+	height: 80px;
+	margin: 15px 0 0 15px;
+}
+.yqljp{
+	position: relative;
+	width: 60px;
+	height: 20px;
+	font-size: 15px;
+	border-bottom: #07a4f3 2px solid;
+}
+.yqljp1{
+	font-size: 20px;
+	color: rgb(91, 102, 250);
+}
+.yqljp1 a{
+	text-decoration: none;
+}
+.yqljp2{
+	font-size: 20px;
+	margin: -23px 0 0 25%;
+	color: rgb(91, 102, 250);
+}
+.yqljp2 a{
+	text-decoration: none;
+}
+.yqljp3{
+	font-size: 20px;
+	margin: -23px 0 0 45%;
+	color: rgb(91, 102, 250);
+}
+.yqljp3 a{
+	text-decoration: none;
+}
+/*在线人数*/
+.zaixianrenshu{
+	z-index: 0;
+    display: block;
+	width: 300px;
+	height: 100px;
+	float: right;
+	margin: 1150px -300px 0 0;
+	box-shadow: 0 2px 4px rgba(0,0,0,.1);
+	background-color: #dddddd;
+}
+/*在线人数div*/
+.zxrsdiv{
+	position: relative;
+	width: 300px;
+	height: 80px;
+	margin: 15px 0 0 15px;
+}
+.zxrsp{
+	position: relative;
+	width: 80px;
+	height: 20px;
+	font-size: 15px;
+	border-bottom: #07a4f3 2px solid;
+}
+
+.zxrsp3{
+	display: inline-block;
+	width: 250px;
+	height: 20px;
+	margin: -5px 0 0 0;
+	font-size: 14px;
+}
+/*友情链接
+*/
+.ast{
+	width: 100px;
+	height: 40px;
+	position: absolute;
+	margin-top: 5px;
+}
+.ast2{
+	width: 100px;
+	height: 40px;
+	position: absolute;
+	margin-top: 28px;
+}
+.ast3{
+	width: 100px;
+	height: 40px;
+	position: absolute;
+	margin-top: 52px;
+}
+/*右边栏白块消减*/
+@media (max-width: 992px) {
+	.baikuai{
+		display: none;
+	}
+	.baikuai2{
+		display: none;
+	}
+	.wzgd{
+		display: none;
+	}
+ 	.zaixianrenshu{
+		display: none;
+	}
+	
+}

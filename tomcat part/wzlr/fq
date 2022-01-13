@@ -1,0 +1,19 @@
+/*if(zzwz!=null){
+          Cookie zztitlecookie=new Cookie("zztitle",URLEncoder.encode(zztitle, "UTF-8"));
+          Cookie zznamecookie=new Cookie("zzname",URLEncoder.encode(zzname, "UTF-8"));
+          Cookie cdidcookie=new Cookie("cdid",cdid);
+          Cookie zzdatecookie=new Cookie("zzdate",zzdate);
+          Cookie zzydscookie=new Cookie("zzyds",zzyds);
+          Cookie xsnamecookie=new Cookie("xsname",URLEncoder.encode(xsname, "UTF-8"));
+          out.print("1");
+         out.print(zztitle);
+          out.print(zzname);
+          out.print(zzdate);
+          out.print(zzyds);
+          response.addCookie(cdidcookie);
+          response.addCookie(zztitlecookie);
+          response.addCookie(zznamecookie);
+          response.addCookie(zzdatecookie);
+          response.addCookie(zzydscookie);
+          response.addCookie(xsnamecookie);
+      }*/

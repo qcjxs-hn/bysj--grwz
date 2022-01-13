@@ -1,0 +1,26 @@
+ <%
+         String[] xgplunamesz=xgpluname.split(";");
+         String[] xgplusersz=xgpluser.split(";");
+         String[] xgplplsz=xgplpl.split(";");
+         String[] xgpldatesz=xgpldate.split(";");
+         for(int xgpli= 0;xgpli<xgplunamesz.length&&xgpli<7;xgpli++){
+           %>
+         <div>
+            <p class="pluserp"><img class="plusertp" src="https://www.qc-h.xyz/usertx/<%out.print(xgplusersz[xgpli]);%>.ico">
+           <div class="pluserdiv1">
+               <a class="plusera1"><% out.print(xgplunamesz[xgpli]);%></a>
+           </div>
+           <br/>
+            <div class="pluserdiv3">
+               <a class="plusera3"><% out.print(xgpldatesz[xgpli]);%></a>
+           </div>
+           <br/>
+           <div class="pluserdiv2">
+               <a class="plusera2"><%if(xgplplsz[xgpli].length()>15){out.print(xgplplsz[xgpli].substring(0,15)+"...>");}else{out.print(xgplplsz[xgpli]);}%></a>
+           </div>
+         </p>
+         </div>
+                  <% }%>
+                   /*          zztitle=session.getAttribute("zztitle").toString();
+          zzname=session.getAttribute("zzname").toString();
+          zzdate=session.getAttribute("zzdate").toString();*/
