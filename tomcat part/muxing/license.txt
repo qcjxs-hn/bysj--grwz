@@ -1,0 +1,11 @@
+Model Information:
+* title:	Pagani Huayra-BC | Metallic Red |
+* source:	https://sketchfab.com/3d-models/pagani-huayra-bc-metallic-red-5e70ac884b91431682c5dcb3e162938f
+* author:	BEAGAMER (https://sketchfab.com/BEAGAMER)
+
+Model License:
+* license type:	CC-BY-SA-4.0 (http://creativecommons.org/licenses/by-sa/4.0/)
+* requirements:	Author must be credited. Modified versions must have the same license. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Pagani Huayra-BC | Metallic Red |" (https://sketchfab.com/3d-models/pagani-huayra-bc-metallic-red-5e70ac884b91431682c5dcb3e162938f) by BEAGAMER (https://sketchfab.com/BEAGAMER) licensed under CC-BY-SA-4.0 (http://creativecommons.org/licenses/by-sa/4.0/)
